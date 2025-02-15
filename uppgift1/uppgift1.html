@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="uppgift1.css">
+</head>
+<body>
+    <div class="login-items">
+        <!-- & Hälsningsfras och inputs i samma container, kunde ha gjorts med flexbox dock behövdes inte. Såg ingen behov av det tills jag kom fram till att jag behöver 2 buttons. La till flexbox till mina buttons istället bara -->
+        <h1>Welcome</h1>
+        <input type="email" class="input-details" placeholder="Email">
+        <input type="password" class="input-details" placeholder="Password">
+
+        <!-- ^ Seperat div container för att få till input och label intill varandra med flexbox -->
+        <div class="checkbox-container">
+            <label for="checkbox" class="checkbox-label">Remember me</label>
+            <input type="checkbox" class="checkbox-input">
+        </div>
+
+        <!-- ^ Seperat div container för att få till buttons intill varandra med flexbox -->
+        <div class="btn-container">
+            <input type="button" value="Login" class="btn">
+            <input type="button" class="btn" value="Register">
+        </div>
+
+
+
+        
+    </div>
+</body>
+</html>
