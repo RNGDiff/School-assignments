@@ -3,7 +3,8 @@ html{
     padding: 0;
 }
 body{
-
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -40,7 +41,6 @@ li:hover{
 .clock{
     width: 90px;
     text-align: center;
-
     margin-right: 15px;
     padding: 10px 16px 10px 16px;
     color: white;
@@ -57,18 +57,11 @@ li:hover{
     color: white;
 }
 .personal-image{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     background-color: rgb(60, 60, 95);
     border-radius: 2px;
     width: 50%;
     max-height: 100%;
     margin: 5px;
-}
-.personal-image>img{
-    height: 100%;
-    width: 100%;
 }
 .present-cv{
     border-radius: 2px;
@@ -80,9 +73,6 @@ li:hover{
 }
 .present-text{
     padding: 5px;
-}
-.cv-redirect{
-    text-decoration: underline dashed;
 }
 
 /* ! PROJECT DISPLAY */
@@ -136,6 +126,8 @@ h2{
 /* ? FOOTER SECTION */
 .footer-section{
     display: flex;
+    justify-content: last baseline;
+    align-items: last baseline;
     background-color: rgb(24, 32, 33);
     margin: 49px 0px 0px 0px;
 }
@@ -183,4 +175,17 @@ img{
         margin: 5px;
         box-sizing: border-box;
     }
+}
+
+/* * CONTACT */
+.contact-text{
+    color: white;
+    font-size: 1.3rem;
+    padding: 0px 0px 0px 20px;
+}
+.contact-text.contact-padding{
+padding-top: 20px;
+}
+.contact-info{
+    flex: 1;
 }
